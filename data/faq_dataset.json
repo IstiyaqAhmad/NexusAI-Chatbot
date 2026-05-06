@@ -1,0 +1,547 @@
+{
+  "domain": "Artificial Intelligence & Technology",
+  "version": "1.0",
+  "description": "Domain-specific FAQ dataset for AI Technology Assistant chatbot",
+  "faq": [
+    {
+      "id": 1,
+      "category": "AI Fundamentals",
+      "question": "What is artificial intelligence?",
+      "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems. These processes include learning, reasoning, problem-solving, perception, and language understanding. AI systems can be categorized into narrow AI (designed for specific tasks) and general AI (hypothetical systems with human-like cognitive abilities)."
+    },
+    {
+      "id": 2,
+      "category": "AI Fundamentals",
+      "question": "What is the difference between AI and machine learning?",
+      "answer": "AI is the broader concept of machines being able to carry out tasks in a way that we would consider smart. Machine Learning (ML) is a subset of AI that focuses on the development of algorithms that allow computers to learn from and make predictions based on data, without being explicitly programmed for each task."
+    },
+    {
+      "id": 3,
+      "category": "AI Fundamentals",
+      "question": "What is deep learning?",
+      "answer": "Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence 'deep') to model and understand complex patterns in data. It excels at tasks like image recognition, natural language processing, and speech recognition. Deep learning models require large amounts of data and computational power to train effectively."
+    },
+    {
+      "id": 4,
+      "category": "AI Fundamentals",
+      "question": "What are neural networks?",
+      "answer": "Neural networks are computing systems inspired by biological neural networks in the human brain. They consist of interconnected nodes (neurons) organized in layers — input layer, hidden layers, and output layer. Each connection has a weight that adjusts during training, allowing the network to learn patterns from data through a process called backpropagation."
+    },
+    {
+      "id": 5,
+      "category": "AI Fundamentals",
+      "question": "What is natural language processing?",
+      "answer": "Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret, and manipulate human language. It combines computational linguistics with statistical, machine learning, and deep learning models. Applications include chatbots, translation services, sentiment analysis, text summarization, and voice assistants."
+    },
+    {
+      "id": 6,
+      "category": "Machine Learning",
+      "question": "What is supervised learning?",
+      "answer": "Supervised learning is a type of machine learning where the model is trained on labeled data — meaning each training example has an input paired with the correct output. The algorithm learns to map inputs to outputs and can then predict labels for new, unseen data. Common algorithms include linear regression, decision trees, random forests, and support vector machines."
+    },
+    {
+      "id": 7,
+      "category": "Machine Learning",
+      "question": "What is unsupervised learning?",
+      "answer": "Unsupervised learning is a type of machine learning where the model works with unlabeled data and must find patterns and structures on its own. Common techniques include clustering (K-means, DBSCAN), dimensionality reduction (PCA, t-SNE), and association rule learning. It's useful for customer segmentation, anomaly detection, and data exploration."
+    },
+    {
+      "id": 8,
+      "category": "Machine Learning",
+      "question": "What is reinforcement learning?",
+      "answer": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by performing actions in an environment and receiving rewards or penalties. The goal is to maximize cumulative reward over time. It's used in game playing (AlphaGo), robotics, autonomous vehicles, and recommendation systems. Key concepts include policy, value function, and Q-learning."
+    },
+    {
+      "id": 9,
+      "category": "Machine Learning",
+      "question": "What is overfitting in machine learning?",
+      "answer": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, resulting in poor performance on new unseen data. Signs include very high training accuracy but low test accuracy. Techniques to prevent overfitting include cross-validation, regularization (L1/L2), dropout, early stopping, and using more training data."
+    },
+    {
+      "id": 10,
+      "category": "Machine Learning",
+      "question": "What is the bias-variance tradeoff?",
+      "answer": "The bias-variance tradeoff is a fundamental concept in machine learning. Bias refers to errors from overly simplistic assumptions in the model (underfitting), while variance refers to errors from sensitivity to small fluctuations in the training data (overfitting). The goal is to find the right balance where total error (bias² + variance + irreducible error) is minimized."
+    },
+    {
+      "id": 11,
+      "category": "Machine Learning",
+      "question": "What is transfer learning?",
+      "answer": "Transfer learning is a machine learning technique where a model developed for one task is reused as the starting point for a model on a different task. For example, a model trained on ImageNet can be fine-tuned for medical image classification. It saves time, requires less data, and often produces better results than training from scratch, especially when labeled data is scarce."
+    },
+    {
+      "id": 12,
+      "category": "Machine Learning",
+      "question": "What is gradient descent?",
+      "answer": "Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models. It works by iteratively adjusting model parameters in the direction of steepest decrease of the loss function. Variants include Batch Gradient Descent (uses all data), Stochastic Gradient Descent (uses one sample), and Mini-batch Gradient Descent (uses a subset of data)."
+    },
+    {
+      "id": 13,
+      "category": "Machine Learning",
+      "question": "What is a decision tree?",
+      "answer": "A decision tree is a supervised learning algorithm that makes decisions by splitting data based on feature values in a tree-like structure. Each internal node represents a test on a feature, each branch represents an outcome, and each leaf node represents a class label or value. They are easy to interpret but can overfit. Ensemble methods like Random Forests and Gradient Boosting improve their performance."
+    },
+    {
+      "id": 14,
+      "category": "Machine Learning",
+      "question": "What is cross-validation?",
+      "answer": "Cross-validation is a technique for evaluating machine learning models by splitting the dataset into multiple subsets. In k-fold cross-validation, the data is divided into k subsets, and the model is trained k times, each time using a different subset as the test set and the remaining as training data. This provides a more reliable estimate of model performance than a single train-test split."
+    },
+    {
+      "id": 15,
+      "category": "Machine Learning",
+      "question": "What is feature engineering?",
+      "answer": "Feature engineering is the process of using domain knowledge to create, transform, or select input variables (features) that improve machine learning model performance. Techniques include normalization, one-hot encoding, creating polynomial features, binning, and extracting date/time components. Good feature engineering can significantly boost model accuracy and is often more impactful than algorithm selection."
+    },
+    {
+      "id": 16,
+      "category": "Deep Learning",
+      "question": "What is a convolutional neural network?",
+      "answer": "A Convolutional Neural Network (CNN) is a deep learning architecture primarily designed for processing structured grid-like data such as images. It uses convolutional layers with learnable filters to automatically detect features like edges, textures, and patterns. CNNs typically include pooling layers for dimensionality reduction and fully connected layers for final classification. Popular architectures include VGG, ResNet, and Inception."
+    },
+    {
+      "id": 17,
+      "category": "Deep Learning",
+      "question": "What is a recurrent neural network?",
+      "answer": "A Recurrent Neural Network (RNN) is a type of neural network designed for sequential data processing. Unlike feedforward networks, RNNs have loops that allow information to persist, maintaining a hidden state that captures information from previous time steps. They are used for tasks like language modeling, text generation, and time series prediction. Advanced variants include LSTM and GRU which solve the vanishing gradient problem."
+    },
+    {
+      "id": 18,
+      "category": "Deep Learning",
+      "question": "What is a transformer model?",
+      "answer": "The Transformer is a neural network architecture introduced in the paper 'Attention is All You Need' (2017). It relies entirely on self-attention mechanisms to process input data in parallel, unlike RNNs which process sequentially. Transformers are the foundation of modern NLP models like BERT, GPT, and T5. They excel at capturing long-range dependencies and have revolutionized natural language processing, computer vision, and more."
+    },
+    {
+      "id": 19,
+      "category": "Deep Learning",
+      "question": "What is the attention mechanism?",
+      "answer": "The attention mechanism allows neural networks to focus on specific parts of the input when producing output. It computes weighted sums of input representations, where weights indicate relevance. Self-attention relates different positions of a single sequence to compute a representation. Multi-head attention runs multiple attention operations in parallel. This mechanism is fundamental to Transformer models and has greatly improved performance in NLP and computer vision."
+    },
+    {
+      "id": 20,
+      "category": "Deep Learning",
+      "question": "What is backpropagation?",
+      "answer": "Backpropagation (backward propagation of errors) is the primary algorithm for training neural networks. It calculates the gradient of the loss function with respect to each weight by applying the chain rule, propagating the error backward through the network layers. These gradients are then used by optimization algorithms like gradient descent to update the weights and minimize the loss function, enabling the network to learn."
+    },
+    {
+      "id": 21,
+      "category": "Deep Learning",
+      "question": "What is batch normalization?",
+      "answer": "Batch normalization is a technique that normalizes the inputs of each layer in a neural network by adjusting and scaling the activations. It reduces internal covariate shift, allows higher learning rates, acts as a regularizer, and speeds up training. During training, it uses batch statistics; during inference, it uses running averages computed during training. It's widely used in CNNs and other deep architectures."
+    },
+    {
+      "id": 22,
+      "category": "Deep Learning",
+      "question": "What is a generative adversarial network?",
+      "answer": "A Generative Adversarial Network (GAN) consists of two neural networks — a Generator and a Discriminator — that compete against each other. The generator creates fake data to fool the discriminator, while the discriminator tries to distinguish real data from fake. Through this adversarial process, the generator learns to produce increasingly realistic outputs. GANs are used for image generation, style transfer, data augmentation, and super-resolution."
+    },
+    {
+      "id": 23,
+      "category": "Deep Learning",
+      "question": "What is an autoencoder?",
+      "answer": "An autoencoder is a type of neural network that learns to compress data into a lower-dimensional representation (encoding) and then reconstruct it back (decoding). The bottleneck layer forces the network to learn efficient data representations. Variants include Variational Autoencoders (VAE) for generative modeling, Denoising Autoencoders for noise removal, and Sparse Autoencoders for feature learning. They are used for dimensionality reduction, anomaly detection, and data generation."
+    },
+    {
+      "id": 24,
+      "category": "NLP",
+      "question": "What is tokenization in NLP?",
+      "answer": "Tokenization is the process of breaking text into smaller units called tokens, which can be words, subwords, or characters. Word tokenization splits by spaces and punctuation. Subword tokenization (BPE, WordPiece, SentencePiece) breaks words into meaningful subunits, handling rare words better. Tokenization is typically the first step in any NLP pipeline and directly affects model performance."
+    },
+    {
+      "id": 25,
+      "category": "NLP",
+      "question": "What is word embedding?",
+      "answer": "Word embeddings are dense vector representations of words in a continuous vector space where semantically similar words are mapped to nearby points. Unlike one-hot encoding, embeddings capture semantic relationships. Popular methods include Word2Vec (Skip-gram, CBOW), GloVe (Global Vectors), and FastText. Modern contextual embeddings from BERT and GPT capture different meanings of the same word based on context."
+    },
+    {
+      "id": 26,
+      "category": "NLP",
+      "question": "What is sentiment analysis?",
+      "answer": "Sentiment analysis (opinion mining) is an NLP technique that identifies and extracts subjective information from text to determine the writer's attitude, opinion, or emotion. It can classify text as positive, negative, or neutral, and can detect specific emotions. Applications include brand monitoring, customer feedback analysis, market research, and social media analysis. Methods range from lexicon-based approaches to deep learning models."
+    },
+    {
+      "id": 27,
+      "category": "NLP",
+      "question": "What is named entity recognition?",
+      "answer": "Named Entity Recognition (NER) is an NLP task that identifies and classifies named entities in text into predefined categories such as person names, organizations, locations, dates, quantities, and more. It's crucial for information extraction, question answering, and knowledge graph construction. Modern NER systems use deep learning models like BiLSTM-CRF and Transformer-based models achieving state-of-the-art performance."
+    },
+    {
+      "id": 28,
+      "category": "NLP",
+      "question": "What is TF-IDF?",
+      "answer": "TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic that reflects the importance of a word in a document relative to a collection of documents. TF measures how frequently a word appears in a document, while IDF measures how rare the word is across all documents. The product gives higher weight to words that are frequent in a specific document but rare overall, making it useful for text classification, search engines, and information retrieval."
+    },
+    {
+      "id": 29,
+      "category": "NLP",
+      "question": "What is text classification?",
+      "answer": "Text classification is the task of assigning predefined categories to text documents. It uses NLP and ML techniques to automatically categorize text. Applications include spam detection, topic labeling, sentiment analysis, and language detection. Common approaches include Naive Bayes, SVM with TF-IDF features, and modern methods using fine-tuned Transformers like BERT and RoBERTa, which achieve state-of-the-art results."
+    },
+    {
+      "id": 30,
+      "category": "NLP",
+      "question": "What is machine translation?",
+      "answer": "Machine translation is the use of AI to automatically translate text from one language to another. Early approaches used rule-based systems, followed by statistical methods. Modern neural machine translation (NMT) uses encoder-decoder architectures with attention mechanisms. Google Translate and DeepL use Transformer models for high-quality translations. Challenges include handling idioms, context, and low-resource languages."
+    },
+    {
+      "id": 31,
+      "category": "Computer Vision",
+      "question": "What is computer vision?",
+      "answer": "Computer vision is a field of AI that enables computers to interpret and understand visual information from images and videos. Tasks include image classification, object detection, semantic segmentation, face recognition, and scene understanding. It uses deep learning techniques, particularly CNNs and Vision Transformers. Applications span autonomous vehicles, medical imaging, surveillance, augmented reality, and industrial quality control."
+    },
+    {
+      "id": 32,
+      "category": "Computer Vision",
+      "question": "What is object detection?",
+      "answer": "Object detection is a computer vision task that involves identifying and locating objects in images or videos by drawing bounding boxes around them and classifying each object. Popular algorithms include YOLO (You Only Look Once), SSD (Single Shot MultiBox Detector), Faster R-CNN, and newer models like DETR. Applications include autonomous driving, surveillance, retail analytics, and robotics."
+    },
+    {
+      "id": 33,
+      "category": "Computer Vision",
+      "question": "What is image segmentation?",
+      "answer": "Image segmentation divides an image into multiple segments or regions to simplify analysis. Semantic segmentation assigns a class label to every pixel. Instance segmentation distinguishes between different objects of the same class. Panoptic segmentation combines both. Architectures like U-Net, Mask R-CNN, and SegFormer are commonly used. Applications include medical imaging, autonomous driving, and satellite image analysis."
+    },
+    {
+      "id": 34,
+      "category": "Computer Vision",
+      "question": "What is image classification?",
+      "answer": "Image classification is the task of assigning a label to an entire image from a set of predefined categories. CNNs revolutionized this task, with architectures like AlexNet, VGG, ResNet, and EfficientNet achieving human-level performance on benchmarks like ImageNet. Modern approaches also use Vision Transformers (ViT). Transfer learning from pretrained models is standard practice for achieving high accuracy with limited data."
+    },
+    {
+      "id": 35,
+      "category": "AI Applications",
+      "question": "What are chatbots and how do they work?",
+      "answer": "Chatbots are AI programs designed to simulate conversation with humans. Rule-based chatbots follow predefined scripts and decision trees. Retrieval-based chatbots use information retrieval techniques like TF-IDF similarity to find the best matching response from a knowledge base. Generative chatbots use deep learning models (Seq2Seq, Transformers) to generate responses. Modern chatbots like ChatGPT combine large language models with reinforcement learning from human feedback (RLHF)."
+    },
+    {
+      "id": 36,
+      "category": "AI Applications",
+      "question": "What is recommendation system?",
+      "answer": "A recommendation system predicts user preferences and suggests relevant items. Collaborative filtering recommends based on similar users' behavior. Content-based filtering recommends items similar to what users liked before. Hybrid approaches combine both methods. Matrix factorization (SVD) and deep learning models are used for implementation. Applications include Netflix (movies), Amazon (products), Spotify (music), and YouTube (videos)."
+    },
+    {
+      "id": 37,
+      "category": "AI Applications",
+      "question": "How is AI used in healthcare?",
+      "answer": "AI in healthcare includes medical image analysis (detecting tumors, retinal diseases), drug discovery (predicting molecular properties), clinical decision support, personalized treatment planning, and patient monitoring. NLP is used for extracting information from medical records. Predictive models identify high-risk patients. AI-powered robots assist in surgeries. Wearable devices with AI monitor vital signs for early disease detection."
+    },
+    {
+      "id": 38,
+      "category": "AI Applications",
+      "question": "What is autonomous driving?",
+      "answer": "Autonomous driving uses AI to enable vehicles to navigate without human intervention. It combines computer vision (cameras, LiDAR), sensor fusion, path planning, and real-time decision making. Levels range from 0 (no automation) to 5 (full automation). Key technologies include object detection, lane detection, traffic sign recognition, and predictive modeling. Companies like Tesla, Waymo, and Cruise are leading development in this field."
+    },
+    {
+      "id": 39,
+      "category": "AI Applications",
+      "question": "What is speech recognition?",
+      "answer": "Speech recognition (ASR - Automatic Speech Recognition) converts spoken language into text. Modern systems use deep learning models including CTC (Connectionist Temporal Classification), attention-based encoder-decoder models, and end-to-end Transformers like Whisper. Applications include virtual assistants (Siri, Alexa), transcription services, voice-controlled devices, and accessibility tools. Challenges include handling accents, background noise, and multiple speakers."
+    },
+    {
+      "id": 40,
+      "category": "AI Applications",
+      "question": "What is AI in cybersecurity?",
+      "answer": "AI in cybersecurity uses machine learning to detect and prevent threats. Applications include intrusion detection systems using anomaly detection, malware classification using neural networks, phishing detection using NLP, and automated incident response. AI can analyze vast amounts of network traffic data in real-time to identify suspicious patterns. Challenges include adversarial attacks designed to fool AI systems and the need for explainable AI in security decisions."
+    },
+    {
+      "id": 41,
+      "category": "AI Ethics",
+      "question": "What is AI bias?",
+      "answer": "AI bias occurs when machine learning models produce unfair or discriminatory outcomes due to biased training data, flawed algorithms, or biased human decisions in the development process. Examples include facial recognition performing better on certain demographics, hiring algorithms discriminating based on gender, and loan approval models showing racial bias. Mitigation strategies include diverse training data, fairness-aware algorithms, bias auditing, and regulatory oversight."
+    },
+    {
+      "id": 42,
+      "category": "AI Ethics",
+      "question": "What is explainable AI?",
+      "answer": "Explainable AI (XAI) refers to methods and techniques that make AI system decisions understandable to humans. Black-box models like deep neural networks can be difficult to interpret. XAI techniques include LIME (Local Interpretable Model-agnostic Explanations), SHAP (SHapley Additive exPlanations), attention visualization, and feature importance analysis. XAI is crucial for building trust, meeting regulatory requirements, and debugging AI systems in critical domains like healthcare and finance."
+    },
+    {
+      "id": 43,
+      "category": "AI Ethics",
+      "question": "What are the ethical concerns with AI?",
+      "answer": "Key ethical concerns with AI include algorithmic bias and fairness, privacy and surveillance, job displacement, autonomous weapons, deepfakes and misinformation, accountability for AI decisions, data consent, and concentration of power. Organizations like IEEE and governments worldwide are developing AI ethics guidelines. Responsible AI development requires transparency, fairness, accountability, privacy protection, and inclusive design practices."
+    },
+    {
+      "id": 44,
+      "category": "Data Science",
+      "question": "What is data preprocessing?",
+      "answer": "Data preprocessing is the process of transforming raw data into a clean, usable format for analysis and modeling. Steps include handling missing values (imputation, deletion), removing duplicates, normalizing or standardizing features, encoding categorical variables, handling outliers, and feature scaling. Proper preprocessing is critical as the quality of data directly impacts model performance. Common tools include pandas, scikit-learn preprocessors, and Apache Spark."
+    },
+    {
+      "id": 45,
+      "category": "Data Science",
+      "question": "What is dimensionality reduction?",
+      "answer": "Dimensionality reduction reduces the number of features in a dataset while preserving important information. Linear methods include PCA (Principal Component Analysis) and LDA (Linear Discriminant Analysis). Non-linear methods include t-SNE, UMAP, and autoencoders. Benefits include reduced computation, noise removal, easier visualization, and mitigating the curse of dimensionality. It's essential for high-dimensional data like images, genomics, and text."
+    },
+    {
+      "id": 46,
+      "category": "Data Science",
+      "question": "What is data augmentation?",
+      "answer": "Data augmentation is a technique to increase the diversity and size of training data by applying transformations to existing samples. For images: rotation, flipping, cropping, color jittering, and mixup. For text: synonym replacement, back-translation, random insertion/deletion. For audio: pitch shifting, time stretching, noise addition. It helps prevent overfitting, improves model generalization, and is especially valuable when labeled data is limited."
+    },
+    {
+      "id": 47,
+      "category": "Model Evaluation",
+      "question": "What is a confusion matrix?",
+      "answer": "A confusion matrix is a table used to evaluate classification model performance. It shows the counts of True Positives (correctly predicted positive), True Negatives (correctly predicted negative), False Positives (incorrectly predicted positive — Type I error), and False Negatives (incorrectly predicted negative — Type II error). From it, we derive metrics like accuracy, precision, recall, F1-score, and specificity. It's essential for understanding model behavior beyond simple accuracy."
+    },
+    {
+      "id": 48,
+      "category": "Model Evaluation",
+      "question": "What is precision and recall?",
+      "answer": "Precision is the ratio of true positive predictions to all positive predictions (TP / (TP + FP)) — it measures how many selected items are relevant. Recall (sensitivity) is the ratio of true positive predictions to all actual positives (TP / (TP + FN)) — it measures how many relevant items are selected. The F1-score is the harmonic mean of precision and recall. In medical diagnosis, high recall is critical; in spam detection, high precision may be preferred."
+    },
+    {
+      "id": 49,
+      "category": "Model Evaluation",
+      "question": "What is the ROC curve?",
+      "answer": "The ROC (Receiver Operating Characteristic) curve plots the True Positive Rate against the False Positive Rate at various classification thresholds. The AUC (Area Under the Curve) summarizes performance: AUC = 1 indicates perfect classification, AUC = 0.5 indicates random guessing. ROC curves help compare models, select optimal thresholds, and evaluate performance across different operating points. They are robust to class imbalance compared to accuracy alone."
+    },
+    {
+      "id": 50,
+      "category": "LLM",
+      "question": "What is a large language model?",
+      "answer": "A Large Language Model (LLM) is a neural network trained on vast amounts of text data to understand and generate human-like language. Based on the Transformer architecture, LLMs like GPT-4, Claude, LLaMA, and PaLM have billions of parameters. They are pretrained on diverse text corpora using self-supervised learning and can be fine-tuned for specific tasks. LLMs excel at text generation, translation, summarization, coding, and reasoning."
+    },
+    {
+      "id": 51,
+      "category": "LLM",
+      "question": "What is GPT?",
+      "answer": "GPT (Generative Pre-trained Transformer) is a family of autoregressive language models developed by OpenAI. GPT models are pretrained on large text corpora using next-token prediction and can be fine-tuned for downstream tasks. GPT-3 has 175 billion parameters, and GPT-4 is a multimodal model handling both text and images. GPT models power ChatGPT and have become foundational in modern NLP applications."
+    },
+    {
+      "id": 52,
+      "category": "LLM",
+      "question": "What is BERT?",
+      "answer": "BERT (Bidirectional Encoder Representations from Transformers) is a pretrained language model developed by Google. Unlike GPT's unidirectional approach, BERT processes text bidirectionally, understanding context from both left and right. It's pretrained using Masked Language Modeling and Next Sentence Prediction. BERT excels at tasks like question answering, text classification, and NER. Variants include RoBERTa, ALBERT, and DistilBERT."
+    },
+    {
+      "id": 53,
+      "category": "LLM",
+      "question": "What is fine-tuning in the context of LLMs?",
+      "answer": "Fine-tuning is the process of further training a pretrained language model on a specific dataset or task to adapt it for particular applications. It adjusts the model's weights using a smaller, task-specific dataset. Techniques include full fine-tuning, LoRA (Low-Rank Adaptation), QLoRA, prefix tuning, and adapter modules. Fine-tuning requires significantly less data and computation than training from scratch while achieving competitive performance."
+    },
+    {
+      "id": 54,
+      "category": "LLM",
+      "question": "What is prompt engineering?",
+      "answer": "Prompt engineering is the practice of designing and optimizing input prompts to get desired outputs from language models. Techniques include zero-shot prompting, few-shot prompting (providing examples), chain-of-thought prompting (step-by-step reasoning), and role-based prompting. Effective prompts are clear, specific, and well-structured. Prompt engineering is crucial for maximizing LLM performance without fine-tuning and is a growing skill in AI development."
+    },
+    {
+      "id": 55,
+      "category": "LLM",
+      "question": "What is RAG in AI?",
+      "answer": "RAG (Retrieval-Augmented Generation) is an architecture that combines information retrieval with text generation. It first retrieves relevant documents from a knowledge base using vector similarity search, then uses these documents as context for an LLM to generate informed responses. RAG reduces hallucinations by grounding generated responses in real data, enables access to up-to-date information, and doesn't require model retraining when knowledge changes."
+    },
+    {
+      "id": 56,
+      "category": "LLM",
+      "question": "What is temperature in language models?",
+      "answer": "Temperature is a hyperparameter that controls the randomness of language model outputs. It scales the logits before applying softmax. A temperature of 0 makes the model deterministic (always choosing the highest probability token). Higher temperatures (e.g., 1.0-2.0) increase randomness and creativity, producing more diverse but potentially less coherent outputs. Lower temperatures (e.g., 0.1-0.5) make outputs more focused and deterministic. Optimal temperature depends on the use case."
+    },
+    {
+      "id": 57,
+      "category": "LLM",
+      "question": "What is top-p sampling?",
+      "answer": "Top-p (nucleus) sampling is a text generation strategy that selects from the smallest set of tokens whose cumulative probability exceeds the threshold p. For example, with top-p = 0.9, only tokens in the top 90% probability mass are considered. This dynamically adjusts the number of candidate tokens per step — fewer for confident predictions, more for uncertain ones. It produces more natural text than top-k sampling and is often used alongside temperature control."
+    },
+    {
+      "id": 58,
+      "category": "MLOps",
+      "question": "What is MLOps?",
+      "answer": "MLOps (Machine Learning Operations) is a set of practices that combines ML, DevOps, and data engineering to deploy and maintain ML systems reliably in production. It covers the entire ML lifecycle: data management, model training, validation, deployment, monitoring, and retraining. Tools include MLflow for experiment tracking, Kubeflow for orchestration, Docker for containerization, and DVC for data versioning. MLOps ensures reproducibility, scalability, and continuous improvement."
+    },
+    {
+      "id": 59,
+      "category": "MLOps",
+      "question": "What is model deployment?",
+      "answer": "Model deployment is the process of making a trained ML model available for use in production. Deployment methods include REST APIs (Flask, FastAPI), containerization (Docker), serverless functions (AWS Lambda), edge deployment (TensorFlow Lite, ONNX), and batch inference pipelines. Key considerations include latency, scalability, versioning, monitoring, and A/B testing. Tools like TensorFlow Serving, TorchServe, and Seldon Core simplify deployment workflows."
+    },
+    {
+      "id": 60,
+      "category": "MLOps",
+      "question": "What is model monitoring?",
+      "answer": "Model monitoring tracks the performance of deployed ML models over time to detect degradation. It includes monitoring prediction accuracy, data drift (changes in input data distribution), concept drift (changes in the relationship between inputs and outputs), latency, throughput, and resource utilization. Tools like Evidently AI, WhyLabs, and Prometheus with Grafana help automate monitoring. When degradation is detected, models may need retraining."
+    },
+    {
+      "id": 61,
+      "category": "Tools & Frameworks",
+      "question": "What is TensorFlow?",
+      "answer": "TensorFlow is an open-source machine learning framework developed by Google. It provides a comprehensive ecosystem for building and deploying ML models including TensorFlow Core for model development, Keras as a high-level API, TensorFlow Lite for mobile/edge devices, TensorFlow.js for web deployment, and TensorFlow Serving for production. It supports distributed training, custom operations, and extensive visualization through TensorBoard."
+    },
+    {
+      "id": 62,
+      "category": "Tools & Frameworks",
+      "question": "What is PyTorch?",
+      "answer": "PyTorch is an open-source machine learning framework developed by Meta AI. Known for its dynamic computation graph (eager execution), Pythonic interface, and strong research community. It includes torch.nn for neural networks, torch.optim for optimization, torchvision for computer vision, and torchaudio for audio processing. PyTorch Lightning simplifies training boilerplate. It's the preferred framework in academic research and increasingly in production."
+    },
+    {
+      "id": 63,
+      "category": "Tools & Frameworks",
+      "question": "What is scikit-learn?",
+      "answer": "Scikit-learn is a popular Python library for traditional machine learning. It provides simple, efficient tools for classification, regression, clustering, dimensionality reduction, model selection, and preprocessing. It features a consistent API, extensive documentation, and integration with NumPy and pandas. While not designed for deep learning, it's ideal for classical ML algorithms like SVM, Random Forest, K-means, and pipeline construction."
+    },
+    {
+      "id": 64,
+      "category": "Tools & Frameworks",
+      "question": "What is Hugging Face?",
+      "answer": "Hugging Face is a platform and library ecosystem for NLP and ML. The Transformers library provides thousands of pretrained models for text, vision, and audio tasks. The Hub hosts models, datasets, and demos. Other tools include Datasets for data loading, Tokenizers for fast text processing, Accelerate for distributed training, and Spaces for deploying demos. It has become the de facto standard for sharing and using pretrained models."
+    },
+    {
+      "id": 65,
+      "category": "Tools & Frameworks",
+      "question": "What is Jupyter Notebook?",
+      "answer": "Jupyter Notebook is an open-source web application for creating and sharing documents with live code, equations, visualizations, and narrative text. It supports multiple programming languages (Python, R, Julia). Features include interactive output, rich media display, and integration with data science libraries. JupyterLab is the next-generation interface. Google Colab provides free cloud-hosted Jupyter notebooks with GPU access."
+    },
+    {
+      "id": 66,
+      "category": "AI Concepts",
+      "question": "What is the Turing test?",
+      "answer": "The Turing Test, proposed by Alan Turing in 1950, is a measure of machine intelligence. A human evaluator engages in natural language conversations with both a human and a machine. If the evaluator cannot reliably distinguish between them, the machine is said to have passed the test. While influential, the Turing Test has been criticized for testing imitation rather than true intelligence. Modern alternatives focus on specific capabilities and benchmarks."
+    },
+    {
+      "id": 67,
+      "category": "AI Concepts",
+      "question": "What is artificial general intelligence?",
+      "answer": "Artificial General Intelligence (AGI) refers to a hypothetical AI system with human-level cognitive abilities — able to understand, learn, and apply knowledge across any intellectual task. Unlike narrow AI (designed for specific tasks), AGI would exhibit general problem-solving, reasoning, creativity, and adaptability. Current AI systems, including LLMs, are considered narrow AI. AGI remains a long-term research goal with significant technical and ethical challenges."
+    },
+    {
+      "id": 68,
+      "category": "AI Concepts",
+      "question": "What is the difference between strong AI and weak AI?",
+      "answer": "Weak AI (narrow AI) is designed and trained for specific tasks like playing chess, recognizing faces, or translating languages. It simulates intelligence but doesn't possess consciousness or understanding. Strong AI (AGI) would have general cognitive abilities equivalent to humans, with understanding, consciousness, and the ability to reason across domains. All current AI systems are weak AI. The debate about whether strong AI is achievable remains ongoing in philosophy and computer science."
+    },
+    {
+      "id": 69,
+      "category": "AI Concepts",
+      "question": "What is edge AI?",
+      "answer": "Edge AI refers to running AI algorithms locally on hardware devices (edge devices) rather than in the cloud. This includes smartphones, IoT sensors, autonomous vehicles, and embedded systems. Benefits include reduced latency, enhanced privacy (data stays on device), offline capability, and lower bandwidth usage. Frameworks like TensorFlow Lite, ONNX Runtime, and Core ML enable model optimization for edge deployment through techniques like quantization, pruning, and knowledge distillation."
+    },
+    {
+      "id": 70,
+      "category": "AI Concepts",
+      "question": "What is federated learning?",
+      "answer": "Federated learning is a machine learning approach where models are trained across multiple decentralized devices or servers holding local data, without exchanging raw data. Each device trains the model locally and shares only model updates (gradients), which are aggregated centrally. This preserves data privacy and reduces communication costs. Used by Google for keyboard prediction, by hospitals for collaborative medical AI, and in financial fraud detection across institutions."
+    },
+    {
+      "id": 71,
+      "category": "Programming",
+      "question": "What is Python used for in AI?",
+      "answer": "Python is the dominant programming language for AI and ML due to its simplicity, readability, and extensive ecosystem. Key libraries include NumPy (numerical computing), pandas (data manipulation), scikit-learn (machine learning), TensorFlow and PyTorch (deep learning), NLTK and spaCy (NLP), OpenCV (computer vision), and matplotlib/seaborn (visualization). Python's interactive nature via Jupyter notebooks makes it ideal for experimentation and prototyping."
+    },
+    {
+      "id": 72,
+      "category": "Programming",
+      "question": "What is CUDA in the context of AI?",
+      "answer": "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform and API that enables GPU-accelerated computing. In AI, GPUs are essential for training deep learning models as they can perform thousands of parallel matrix operations simultaneously. CUDA provides the interface between software (PyTorch, TensorFlow) and NVIDIA GPUs. cuDNN is a GPU-accelerated library of primitives for deep learning. ROCm provides similar capabilities for AMD GPUs."
+    },
+    {
+      "id": 73,
+      "category": "Programming",
+      "question": "What are APIs in the context of AI?",
+      "answer": "APIs (Application Programming Interfaces) in AI provide programmatic access to AI models and services. REST APIs allow applications to send data and receive predictions from ML models. Cloud AI APIs (Google Cloud AI, AWS SageMaker, Azure ML) offer pre-built models for vision, language, and speech. Hugging Face's Inference API provides access to thousands of models. APIs abstract the complexity of model deployment, enabling developers to integrate AI capabilities easily."
+    },
+    {
+      "id": 74,
+      "category": "Advanced Topics",
+      "question": "What is few-shot learning?",
+      "answer": "Few-shot learning enables ML models to learn from a very small number of labeled examples, mimicking human ability to learn from minimal data. Meta-learning approaches train models across many tasks so they can quickly adapt to new ones. Techniques include Prototypical Networks, Matching Networks, MAML (Model-Agnostic Meta-Learning), and Siamese Networks. LLMs also demonstrate few-shot capabilities through in-context learning with prompt examples."
+    },
+    {
+      "id": 75,
+      "category": "Advanced Topics",
+      "question": "What is zero-shot learning?",
+      "answer": "Zero-shot learning allows models to handle tasks or recognize classes they were never explicitly trained on. This is achieved by leveraging auxiliary information like semantic descriptions, attribute vectors, or pretrained knowledge. Large language models demonstrate zero-shot capabilities through their extensive pretraining — they can perform tasks described in natural language without task-specific training. CLIP, for example, performs zero-shot image classification using natural language descriptions."
+    },
+    {
+      "id": 76,
+      "category": "Advanced Topics",
+      "question": "What is knowledge distillation?",
+      "answer": "Knowledge distillation is a technique where a smaller 'student' model is trained to replicate the behavior of a larger 'teacher' model. The student learns from the teacher's soft probability distributions rather than hard labels, capturing more nuanced knowledge. This produces compact models suitable for deployment on resource-constrained devices while retaining much of the teacher's performance. Examples include DistilBERT (66% smaller than BERT, 97% of performance) and TinyBERT."
+    },
+    {
+      "id": 77,
+      "category": "Advanced Topics",
+      "question": "What is model quantization?",
+      "answer": "Model quantization reduces the precision of a neural network's weights and activations from 32-bit floating point to lower bit widths (16-bit, 8-bit, or 4-bit). This reduces model size, memory usage, and inference time with minimal accuracy loss. Post-training quantization applies to trained models, while quantization-aware training incorporates quantization during training. Tools include TensorFlow Lite, PyTorch quantization, and ONNX Runtime. It enables deploying large models on mobile and edge devices."
+    },
+    {
+      "id": 78,
+      "category": "Advanced Topics",
+      "question": "What is attention in neural networks?",
+      "answer": "Attention is a mechanism that allows neural networks to weight the importance of different parts of the input when producing output. Soft attention computes a weighted sum over all inputs, while hard attention selects specific inputs. Self-attention (used in Transformers) relates different positions within a single sequence. Cross-attention relates positions between two sequences. Multi-head attention runs multiple attention operations in parallel, capturing different types of relationships."
+    },
+    {
+      "id": 79,
+      "category": "Trends",
+      "question": "What is generative AI?",
+      "answer": "Generative AI creates new content including text, images, music, code, and video. Key models include LLMs (GPT-4, Claude) for text, diffusion models (Stable Diffusion, DALL-E, Midjourney) for images, and models like Sora for video. Techniques include transformers, GANs, VAEs, and diffusion processes. Applications span creative industries, software development, education, marketing, and scientific research. It represents one of the most transformative applications of modern AI."
+    },
+    {
+      "id": 80,
+      "category": "Trends",
+      "question": "What are AI agents?",
+      "answer": "AI agents are autonomous systems that can perceive their environment, make decisions, and take actions to achieve specific goals. Modern AI agents combine LLMs with tools (web search, code execution, APIs) to complete complex tasks. Frameworks include LangChain, AutoGPT, and CrewAI. Agents can plan multi-step actions, use memory, collaborate with other agents, and self-correct. They represent the evolution from simple chatbots to autonomous AI systems."
+    },
+    {
+      "id": 81,
+      "category": "Trends",
+      "question": "What is multimodal AI?",
+      "answer": "Multimodal AI systems can process and generate multiple types of data — text, images, audio, video, and more — simultaneously. Models like GPT-4V, Gemini, and LLaVA can understand images and text together. CLIP connects vision and language. Applications include visual question answering, image captioning, video understanding, and document AI. Multimodal models are more versatile and closer to human-like understanding of the world."
+    },
+    {
+      "id": 82,
+      "category": "Trends",
+      "question": "What is the future of AI?",
+      "answer": "The future of AI includes advancement toward AGI, increased automation across industries, more capable AI agents, improved reasoning abilities, real-time multimodal understanding, and integration into daily life. Challenges include regulatory frameworks, ethical AI development, energy efficiency, and managing societal impact. Key trends include on-device AI, AI-human collaboration, personalized AI assistants, scientific discovery aided by AI, and the democratization of AI tools."
+    },
+    {
+      "id": 83,
+      "category": "AI Fundamentals",
+      "question": "What is an activation function?",
+      "answer": "An activation function introduces non-linearity into neural networks, enabling them to learn complex patterns. Common functions include ReLU (Rectified Linear Unit, max(0,x) — most widely used), Sigmoid (outputs 0-1, used for binary classification), Tanh (outputs -1 to 1), Softmax (outputs probability distribution for multi-class), and GELU (used in Transformers). The choice affects training speed, gradient flow, and model performance."
+    },
+    {
+      "id": 84,
+      "category": "AI Fundamentals",
+      "question": "What is regularization?",
+      "answer": "Regularization techniques prevent overfitting by adding constraints to the learning process. L1 regularization (Lasso) adds absolute weight values to the loss, promoting sparsity. L2 regularization (Ridge) adds squared weight values, encouraging smaller weights. Dropout randomly deactivates neurons during training. Early stopping halts training when validation performance degrades. Data augmentation and batch normalization also act as regularizers. The choice depends on the model and data characteristics."
+    },
+    {
+      "id": 85,
+      "category": "Data Science",
+      "question": "What is a data pipeline?",
+      "answer": "A data pipeline is an automated system that extracts data from sources, transforms it, and loads it into a destination (ETL/ELT). In ML, pipelines include data collection, cleaning, feature engineering, model training, evaluation, and deployment. Tools include Apache Airflow for orchestration, Apache Spark for processing, Kafka for streaming, and scikit-learn Pipeline for ML workflows. Well-designed pipelines ensure reproducibility, scalability, and maintainability."
+    },
+    {
+      "id": 86,
+      "category": "Data Science",
+      "question": "What is exploratory data analysis?",
+      "answer": "Exploratory Data Analysis (EDA) is the process of analyzing datasets to summarize their main characteristics using statistical graphics and other visualization methods. Steps include examining distributions, identifying correlations, detecting outliers, checking for missing values, and understanding feature relationships. Tools include pandas for data manipulation, matplotlib and seaborn for visualization, and pandas profiling for automated reports. EDA guides feature engineering and model selection decisions."
+    },
+    {
+      "id": 87,
+      "category": "Model Evaluation",
+      "question": "What is A/B testing in ML?",
+      "answer": "A/B testing in machine learning compares two model versions by routing traffic between them and measuring performance metrics. It's used to validate model improvements before full deployment. Key considerations include statistical significance, sample size, test duration, and metric selection. Variants include multi-armed bandit (dynamically adjusting traffic) and interleaving (mixing results from both models). A/B testing provides real-world evidence of model effectiveness."
+    },
+    {
+      "id": 88,
+      "category": "NLP",
+      "question": "What is text summarization?",
+      "answer": "Text summarization automatically generates concise summaries of longer documents. Extractive summarization selects and combines the most important sentences from the source. Abstractive summarization generates new text that captures the key ideas, similar to how humans summarize. Modern approaches use Transformer models like BART, T5, and PEGASUS. Applications include news summarization, document processing, email summarization, and research paper analysis."
+    },
+    {
+      "id": 89,
+      "category": "NLP",
+      "question": "What is question answering in NLP?",
+      "answer": "Question Answering (QA) systems automatically answer questions posed in natural language. Extractive QA finds answer spans within a given context (SQuAD benchmark). Open-domain QA retrieves information from large knowledge bases. Generative QA produces free-form answers using language models. Modern QA systems use Transformer models like BERT, RoBERTa, and T5. RAG-based systems combine retrieval with generation for more accurate, grounded answers."
+    },
+    {
+      "id": 90,
+      "category": "Computer Vision",
+      "question": "What is face recognition technology?",
+      "answer": "Face recognition identifies or verifies individuals from facial images or video. It involves face detection, alignment, feature extraction, and matching. Deep learning models like FaceNet, ArcFace, and DeepFace achieve near-human accuracy. Applications include phone unlocking, security surveillance, identity verification, and photo organization. Concerns include privacy, bias (performance varies across demographics), and potential misuse for mass surveillance."
+    }
+  ]
+}
