@@ -3,6 +3,7 @@ import ChatWindow from './components/ChatWindow'
 import Sidebar from './components/Sidebar'
 import SettingsPanel from './components/SettingsPanel'
 import WelcomeScreen from './components/WelcomeScreen'
+import SmartRecommender from './components/SmartRecommender'
 
 const API_BASE = ''
 
@@ -13,6 +14,7 @@ function App() {
   const [showSettings, setShowSettings] = useState(false)
   const [showSidebar, setShowSidebar] = useState(true)
   const [modelStats, setModelStats] = useState(null)
+  const [activeView, setActiveView] = useState('chat') // 'chat' or 'recommender'
   const [settings, setSettings] = useState({
     temperature: 0.7,
     top_p: 0.9,
@@ -142,10 +144,12 @@ function App() {
           onToggleSettings={() => setShowSettings(!showSettings)}
           onClose={() => setShowSidebar(false)}
           messageCount={messages.length}
+          activeView={activeView}
+          onViewChange={setActiveView}
         />
       )}
 
-      {/* Main Chat Area */}
+      {/* Main Area */}
       <div className="flex-1 flex flex-col relative z-10">
         {/* Header */}
         <header className="glass border-b border-gold-500/10 px-6 py-3 flex items-center justify-between shrink-0">
@@ -169,12 +173,26 @@ function App() {
               </div>
               <div>
                 <h1 className="font-display font-bold text-lg text-white leading-tight">NexusAI</h1>
-                <p className="text-[10px] text-gold-500/60 font-mono tracking-wider uppercase">AI Technology Assistant</p>
+                <p className="text-[10px] text-gold-500/60 font-mono tracking-wider uppercase">
+                  {activeView === 'chat' ? 'AI Technology Assistant' : 'Smart AI Recommender'}
+                </p>
               </div>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
+            {/* View Toggle */}
+            <div className="flex items-center bg-white/[0.03] rounded-lg border border-gold-500/10 p-0.5">
+              <button id="view-chat-btn"
+                onClick={() => setActiveView('chat')}
+                className={`px-3 py-1.5 rounded-md text-[10px] font-medium transition-all ${activeView === 'chat' ? 'bg-gold-500/15 text-gold-500' : 'text-gray-500 hover:text-gray-300'}`}
+              >💬 Chat</button>
+              <button id="view-recommend-btn"
+                onClick={() => setActiveView('recommender')}
+                className={`px-3 py-1.5 rounded-md text-[10px] font-medium transition-all ${activeView === 'recommender' ? 'bg-gold-500/15 text-gold-500' : 'text-gray-500 hover:text-gray-300'}`}
+              >🧠 Recommender</button>
+            </div>
+
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full glass-gold text-xs font-mono text-gold-500/80">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Model Active
@@ -193,20 +211,24 @@ function App() {
           </div>
         </header>
 
-        {/* Chat or Welcome */}
-        {messages.length === 0 ? (
-          <WelcomeScreen onQuickQuestion={handleQuickQuestion} />
+        {/* Main Content */}
+        {activeView === 'chat' ? (
+          <>
+            {messages.length === 0 ? (
+              <WelcomeScreen onQuickQuestion={handleQuickQuestion} onOpenRecommender={() => setActiveView('recommender')} />
+            ) : (
+              <ChatWindow
+                messages={messages}
+                isLoading={isLoading}
+                onSendMessage={sendMessage}
+              />
+            )}
+            {messages.length === 0 && (
+              <InputBar onSend={sendMessage} isLoading={isLoading} />
+            )}
+          </>
         ) : (
-          <ChatWindow
-            messages={messages}
-            isLoading={isLoading}
-            onSendMessage={sendMessage}
-          />
-        )}
-
-        {/* Input Area - shown even on welcome screen */}
-        {messages.length === 0 && (
-          <InputBar onSend={sendMessage} isLoading={isLoading} />
+          <SmartRecommender onBack={() => setActiveView('chat')} />
         )}
       </div>
 

@@ -1,0 +1,341 @@
+{
+  "categories": [
+    {
+      "id": "coding",
+      "task": "Coding & Programming",
+      "keywords": ["programming", "coding", "debugging", "python", "javascript", "react", "java", "code", "developer", "software", "bug", "fix", "compile", "api", "backend", "frontend", "fullstack", "web", "app", "function", "class", "algorithm", "data structure", "syntax", "error", "deploy"],
+      "recommended_tools": [
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.8, "icon": "🤖", "description": "Best all-round AI coding assistant with GPT-4 power", "pricing": "Free / $20/mo"},
+        {"name": "Claude", "url": "https://claude.ai", "rating": 4.7, "icon": "🧠", "description": "Excellent for long code analysis and detailed explanations", "pricing": "Free / $20/mo"},
+        {"name": "GitHub Copilot", "url": "https://github.com/features/copilot", "rating": 4.9, "icon": "💻", "description": "AI pair programmer integrated directly into your IDE", "pricing": "Free for students / $10/mo"},
+        {"name": "Cursor", "url": "https://cursor.sh", "rating": 4.6, "icon": "⚡", "description": "AI-first code editor with built-in intelligence", "pricing": "Free / $20/mo"},
+        {"name": "Replit AI", "url": "https://replit.com", "rating": 4.3, "icon": "🔄", "description": "Code, collaborate, and deploy with AI assistance", "pricing": "Free / $7/mo"}
+      ],
+      "difficulty": "Intermediate",
+      "best_free": "ChatGPT",
+      "trending": true,
+      "tags": ["Developer", "Advanced Tool"],
+      "starter_prompts": [
+        "Create a responsive React dashboard with dark mode using Tailwind CSS",
+        "Write a Python REST API using FastAPI with JWT authentication",
+        "Debug this code and explain what went wrong step by step",
+        "Build a real-time chat application using WebSocket in Node.js",
+        "Create a sorting algorithm visualizer in JavaScript"
+      ]
+    },
+    {
+      "id": "image_generation",
+      "task": "Image Generation",
+      "keywords": ["image", "art", "picture", "generate", "create", "draw", "illustration", "painting", "visual", "graphic", "design", "photo", "realistic", "anime", "portrait", "landscape", "concept", "digital art", "render", "wallpaper", "poster", "banner", "thumbnail"],
+      "recommended_tools": [
+        {"name": "Midjourney", "url": "https://midjourney.com", "rating": 4.9, "icon": "🎨", "description": "Industry-leading AI art generation with stunning quality", "pricing": "$10/mo"},
+        {"name": "Leonardo AI", "url": "https://leonardo.ai", "rating": 4.7, "icon": "🖼️", "description": "Powerful free AI image generator with fine-tuning", "pricing": "Free / $12/mo"},
+        {"name": "Stable Diffusion", "url": "https://stability.ai", "rating": 4.6, "icon": "🌀", "description": "Open-source image generation you can run locally", "pricing": "Free (Open Source)"},
+        {"name": "DALL-E 3", "url": "https://openai.com/dall-e-3", "rating": 4.8, "icon": "🎭", "description": "OpenAI's latest image model with excellent text understanding", "pricing": "Via ChatGPT Plus $20/mo"},
+        {"name": "Adobe Firefly", "url": "https://firefly.adobe.com", "rating": 4.5, "icon": "🔥", "description": "Commercial-safe AI image generation from Adobe", "pricing": "Free / $4.99/mo"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "Leonardo AI",
+      "trending": true,
+      "tags": ["Creative", "Best for Students"],
+      "starter_prompts": [
+        "Generate a cinematic cyberpunk city at night with neon lights",
+        "Create a realistic anime character with detailed shading",
+        "Design a minimalist logo for a tech startup",
+        "Create a fantasy landscape with floating islands and waterfalls",
+        "Generate a professional product mockup on white background"
+      ]
+    },
+    {
+      "id": "writing",
+      "task": "Writing & Content Creation",
+      "keywords": ["write", "writing", "essay", "article", "blog", "content", "copy", "copywriting", "story", "creative writing", "email", "letter", "report", "document", "text", "paragraph", "grammar", "proofread", "edit", "novel", "script", "screenplay", "poem", "seo"],
+      "recommended_tools": [
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.8, "icon": "🤖", "description": "Versatile writing assistant for any content type", "pricing": "Free / $20/mo"},
+        {"name": "Jasper AI", "url": "https://jasper.ai", "rating": 4.6, "icon": "✍️", "description": "Professional marketing copy and content generation", "pricing": "$39/mo"},
+        {"name": "Claude", "url": "https://claude.ai", "rating": 4.7, "icon": "🧠", "description": "Exceptional for long-form writing and nuanced content", "pricing": "Free / $20/mo"},
+        {"name": "Grammarly", "url": "https://grammarly.com", "rating": 4.5, "icon": "📝", "description": "AI-powered grammar checking and writing enhancement", "pricing": "Free / $12/mo"},
+        {"name": "Copy.ai", "url": "https://copy.ai", "rating": 4.3, "icon": "📋", "description": "Quick marketing copy and social media content", "pricing": "Free / $36/mo"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "ChatGPT",
+      "trending": false,
+      "tags": ["Creative", "Best for Students", "Free Tool"],
+      "starter_prompts": [
+        "Write a compelling blog post about sustainable technology trends",
+        "Create a professional LinkedIn post about AI in healthcare",
+        "Write an engaging product description for an e-commerce store",
+        "Draft a persuasive cover letter for a software engineer position",
+        "Create a short story set in a dystopian future"
+      ]
+    },
+    {
+      "id": "video_generation",
+      "task": "Video Generation & Editing",
+      "keywords": ["video", "animation", "motion", "film", "clip", "edit", "render", "movie", "cinematic", "vfx", "effects", "trailer", "youtube", "tiktok", "reel", "shorts", "montage", "transition", "subtitle", "caption"],
+      "recommended_tools": [
+        {"name": "Runway ML", "url": "https://runwayml.com", "rating": 4.8, "icon": "🎬", "description": "Leading AI video generation and editing platform", "pricing": "Free / $12/mo"},
+        {"name": "Sora", "url": "https://openai.com/sora", "rating": 4.9, "icon": "🌊", "description": "OpenAI's groundbreaking text-to-video model", "pricing": "Via ChatGPT Plus"},
+        {"name": "Pika Labs", "url": "https://pika.art", "rating": 4.5, "icon": "⚡", "description": "Fast AI video creation with creative controls", "pricing": "Free / $8/mo"},
+        {"name": "Synthesia", "url": "https://synthesia.io", "rating": 4.6, "icon": "🎭", "description": "AI avatar video generation for presentations", "pricing": "$22/mo"},
+        {"name": "CapCut", "url": "https://capcut.com", "rating": 4.4, "icon": "✂️", "description": "Free AI-powered video editing with smart features", "pricing": "Free / $7.99/mo"}
+      ],
+      "difficulty": "Intermediate",
+      "best_free": "CapCut",
+      "trending": true,
+      "tags": ["Creative", "Trending"],
+      "starter_prompts": [
+        "Create a 10-second cinematic drone shot of a mountain landscape",
+        "Generate an animated explainer video about machine learning",
+        "Edit this video with smooth transitions and background music",
+        "Create a professional product showcase video with AI avatars",
+        "Generate a text-to-video clip of a futuristic city"
+      ]
+    },
+    {
+      "id": "music_audio",
+      "task": "Music & Audio Generation",
+      "keywords": ["music", "audio", "song", "beat", "melody", "compose", "sound", "voice", "podcast", "speech", "sing", "instrument", "mix", "master", "soundtrack", "jingle", "rap", "hip hop", "electronic", "lo-fi", "ambient"],
+      "recommended_tools": [
+        {"name": "Suno AI", "url": "https://suno.ai", "rating": 4.8, "icon": "🎵", "description": "Generate full songs with vocals from text prompts", "pricing": "Free / $8/mo"},
+        {"name": "Udio", "url": "https://udio.com", "rating": 4.7, "icon": "🎶", "description": "High-quality AI music generation with fine control", "pricing": "Free / $10/mo"},
+        {"name": "ElevenLabs", "url": "https://elevenlabs.io", "rating": 4.9, "icon": "🎙️", "description": "Ultra-realistic AI voice cloning and text-to-speech", "pricing": "Free / $5/mo"},
+        {"name": "Mubert", "url": "https://mubert.com", "rating": 4.3, "icon": "🔊", "description": "Royalty-free AI-generated background music", "pricing": "Free / $14/mo"},
+        {"name": "AIVA", "url": "https://aiva.ai", "rating": 4.4, "icon": "🎼", "description": "AI composer for emotional soundtrack creation", "pricing": "Free / $11/mo"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "Suno AI",
+      "trending": true,
+      "tags": ["Creative", "Free Tool", "Trending"],
+      "starter_prompts": [
+        "Compose a lo-fi hip hop beat for studying and relaxation",
+        "Generate an epic cinematic orchestral soundtrack",
+        "Create a catchy pop song about summer adventures",
+        "Clone my voice for professional podcast narration",
+        "Generate ambient background music for a meditation app"
+      ]
+    },
+    {
+      "id": "data_analysis",
+      "task": "Data Analysis & Visualization",
+      "keywords": ["data", "analysis", "analytics", "statistics", "chart", "graph", "visualization", "dashboard", "report", "excel", "csv", "pandas", "dataset", "insight", "trend", "forecast", "predict", "regression", "correlation", "sql", "database", "bi", "tableau"],
+      "recommended_tools": [
+        {"name": "ChatGPT Code Interpreter", "url": "https://chat.openai.com", "rating": 4.8, "icon": "📊", "description": "Upload data files and get instant analysis with charts", "pricing": "$20/mo"},
+        {"name": "Julius AI", "url": "https://julius.ai", "rating": 4.6, "icon": "📈", "description": "AI data analyst that creates visualizations automatically", "pricing": "Free / $20/mo"},
+        {"name": "Tableau AI", "url": "https://tableau.com", "rating": 4.7, "icon": "📉", "description": "Enterprise-grade data visualization with AI insights", "pricing": "$15/mo"},
+        {"name": "Google Colab", "url": "https://colab.research.google.com", "rating": 4.5, "icon": "🔬", "description": "Free Python notebooks with GPU for data science", "pricing": "Free / $9.99/mo"},
+        {"name": "Kaggle", "url": "https://kaggle.com", "rating": 4.4, "icon": "🏆", "description": "Data science platform with datasets and competitions", "pricing": "Free"}
+      ],
+      "difficulty": "Advanced",
+      "best_free": "Google Colab",
+      "trending": false,
+      "tags": ["Developer", "Advanced Tool", "Best for Students"],
+      "starter_prompts": [
+        "Analyze this CSV dataset and find key trends and patterns",
+        "Create an interactive dashboard showing sales performance",
+        "Build a predictive model for customer churn analysis",
+        "Generate statistical summary and correlation matrix for this data",
+        "Visualize time series data with forecasting predictions"
+      ]
+    },
+    {
+      "id": "chatbot",
+      "task": "Chatbot & Conversational AI",
+      "keywords": ["chatbot", "chat", "conversation", "assistant", "talk", "ask", "question", "answer", "help", "support", "customer service", "dialogue", "interactive", "conversational", "general", "advice", "recommend", "suggestion"],
+      "recommended_tools": [
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.9, "icon": "🤖", "description": "The most popular AI chatbot with broad knowledge", "pricing": "Free / $20/mo"},
+        {"name": "Claude", "url": "https://claude.ai", "rating": 4.8, "icon": "🧠", "description": "Thoughtful, safe, and highly capable AI assistant", "pricing": "Free / $20/mo"},
+        {"name": "Gemini", "url": "https://gemini.google.com", "rating": 4.7, "icon": "💎", "description": "Google's multimodal AI with real-time information", "pricing": "Free / $20/mo"},
+        {"name": "Perplexity AI", "url": "https://perplexity.ai", "rating": 4.6, "icon": "🔍", "description": "AI search engine with cited answers", "pricing": "Free / $20/mo"},
+        {"name": "Microsoft Copilot", "url": "https://copilot.microsoft.com", "rating": 4.5, "icon": "🪟", "description": "Free AI assistant with GPT-4 and web search", "pricing": "Free / $20/mo"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "ChatGPT",
+      "trending": true,
+      "tags": ["Free Tool", "Best for Students"],
+      "starter_prompts": [
+        "Explain quantum computing like I'm a beginner",
+        "Help me plan a study schedule for my exams",
+        "What are the latest trends in artificial intelligence?",
+        "Compare different programming languages for web development",
+        "Give me career advice for getting into tech industry"
+      ]
+    },
+    {
+      "id": "design_ui",
+      "task": "UI/UX Design",
+      "keywords": ["design", "ui", "ux", "interface", "wireframe", "prototype", "mockup", "layout", "figma", "sketch", "responsive", "mobile", "web design", "user experience", "color scheme", "typography", "component", "theme"],
+      "recommended_tools": [
+        {"name": "Figma AI", "url": "https://figma.com", "rating": 4.8, "icon": "🎨", "description": "Collaborative design tool with AI-powered features", "pricing": "Free / $12/mo"},
+        {"name": "Framer", "url": "https://framer.com", "rating": 4.7, "icon": "🖌️", "description": "AI website builder with stunning templates", "pricing": "Free / $5/mo"},
+        {"name": "Galileo AI", "url": "https://usegalileo.ai", "rating": 4.6, "icon": "🚀", "description": "Generate UI designs from text descriptions", "pricing": "Free / $19/mo"},
+        {"name": "Uizard", "url": "https://uizard.io", "rating": 4.4, "icon": "✏️", "description": "Transform sketches into digital designs with AI", "pricing": "Free / $12/mo"},
+        {"name": "v0 by Vercel", "url": "https://v0.dev", "rating": 4.7, "icon": "⚡", "description": "Generate React UI components from text prompts", "pricing": "Free / $20/mo"}
+      ],
+      "difficulty": "Intermediate",
+      "best_free": "Figma AI",
+      "trending": true,
+      "tags": ["Creative", "Developer"],
+      "starter_prompts": [
+        "Design a modern dashboard UI for a fintech application",
+        "Create a mobile app wireframe for a food delivery service",
+        "Generate a dark mode landing page for a SaaS product",
+        "Design a component library with buttons, cards, and forms",
+        "Create a responsive navigation bar with glassmorphism effect"
+      ]
+    },
+    {
+      "id": "translation",
+      "task": "Translation & Language",
+      "keywords": ["translate", "translation", "language", "multilingual", "localize", "spanish", "french", "german", "chinese", "japanese", "korean", "arabic", "hindi", "convert", "interpret", "bilingual"],
+      "recommended_tools": [
+        {"name": "DeepL", "url": "https://deepl.com", "rating": 4.9, "icon": "🌍", "description": "Most accurate AI translation with natural output", "pricing": "Free / $8.74/mo"},
+        {"name": "Google Translate", "url": "https://translate.google.com", "rating": 4.5, "icon": "🌐", "description": "Free translation supporting 130+ languages", "pricing": "Free"},
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.6, "icon": "🤖", "description": "Context-aware translation with cultural nuance", "pricing": "Free / $20/mo"},
+        {"name": "Microsoft Translator", "url": "https://translator.microsoft.com", "rating": 4.4, "icon": "🪟", "description": "Real-time translation with conversation mode", "pricing": "Free"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "Google Translate",
+      "trending": false,
+      "tags": ["Free Tool", "Best for Students"],
+      "starter_prompts": [
+        "Translate this document from English to Japanese with cultural context",
+        "Convert this marketing copy into 5 different languages",
+        "Help me learn Spanish with interactive conversation practice",
+        "Translate and localize this app interface for the French market"
+      ]
+    },
+    {
+      "id": "research",
+      "task": "Research & Academic",
+      "keywords": ["research", "academic", "paper", "study", "thesis", "dissertation", "journal", "citation", "reference", "literature", "review", "scholar", "science", "experiment", "hypothesis", "methodology", "peer review", "publication"],
+      "recommended_tools": [
+        {"name": "Perplexity AI", "url": "https://perplexity.ai", "rating": 4.8, "icon": "🔍", "description": "AI research assistant with real-time web citations", "pricing": "Free / $20/mo"},
+        {"name": "Semantic Scholar", "url": "https://semanticscholar.org", "rating": 4.7, "icon": "📚", "description": "AI-powered academic paper search and analysis", "pricing": "Free"},
+        {"name": "Elicit", "url": "https://elicit.com", "rating": 4.6, "icon": "🔬", "description": "AI research assistant for literature review", "pricing": "Free / $10/mo"},
+        {"name": "Consensus", "url": "https://consensus.app", "rating": 4.5, "icon": "📖", "description": "AI search engine for scientific research", "pricing": "Free / $6.99/mo"},
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.5, "icon": "🤖", "description": "General research assistant and paper summarizer", "pricing": "Free / $20/mo"}
+      ],
+      "difficulty": "Advanced",
+      "best_free": "Semantic Scholar",
+      "trending": false,
+      "tags": ["Best for Students", "Free Tool"],
+      "starter_prompts": [
+        "Find recent papers on transformer architectures in NLP",
+        "Summarize the key findings from this research paper",
+        "Help me write a literature review on climate change impacts",
+        "Find citations supporting the effectiveness of deep learning in healthcare",
+        "Create a research methodology for my thesis on AI ethics"
+      ]
+    },
+    {
+      "id": "presentation",
+      "task": "Presentation & Slides",
+      "keywords": ["presentation", "slides", "powerpoint", "pitch", "deck", "keynote", "ppt", "slideshow", "present", "pitch deck", "business", "meeting", "conference", "demo"],
+      "recommended_tools": [
+        {"name": "Gamma", "url": "https://gamma.app", "rating": 4.8, "icon": "📊", "description": "AI-powered presentation creation in seconds", "pricing": "Free / $8/mo"},
+        {"name": "Beautiful.ai", "url": "https://beautiful.ai", "rating": 4.6, "icon": "✨", "description": "Smart slide design with AI-powered layouts", "pricing": "$12/mo"},
+        {"name": "Tome", "url": "https://tome.app", "rating": 4.5, "icon": "📑", "description": "AI storytelling and presentation generation", "pricing": "Free / $10/mo"},
+        {"name": "SlidesAI", "url": "https://slidesai.io", "rating": 4.3, "icon": "🎯", "description": "Google Slides AI add-on for instant presentations", "pricing": "Free / $10/mo"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "Gamma",
+      "trending": false,
+      "tags": ["Best for Students", "Free Tool"],
+      "starter_prompts": [
+        "Create a 10-slide pitch deck for an AI startup",
+        "Design a professional business proposal presentation",
+        "Generate a classroom lecture on machine learning basics",
+        "Build an investor presentation with key metrics and charts"
+      ]
+    },
+    {
+      "id": "3d_modeling",
+      "task": "3D Modeling & Animation",
+      "keywords": ["3d", "model", "modeling", "animation", "render", "blender", "cad", "sculpt", "mesh", "texture", "material", "scene", "game", "character", "environment", "vr", "ar", "metaverse"],
+      "recommended_tools": [
+        {"name": "Meshy AI", "url": "https://meshy.ai", "rating": 4.6, "icon": "🎲", "description": "Text-to-3D and image-to-3D model generation", "pricing": "Free / $20/mo"},
+        {"name": "Spline AI", "url": "https://spline.design", "rating": 4.7, "icon": "🌐", "description": "3D design tool with AI-powered generation", "pricing": "Free / $7/mo"},
+        {"name": "Luma AI", "url": "https://lumalabs.ai", "rating": 4.5, "icon": "💫", "description": "Create 3D models from photos and videos", "pricing": "Free / $9.99/mo"},
+        {"name": "Kaedim", "url": "https://kaedim3d.com", "rating": 4.4, "icon": "🔷", "description": "Turn 2D images into production-ready 3D models", "pricing": "$29/mo"}
+      ],
+      "difficulty": "Advanced",
+      "best_free": "Spline AI",
+      "trending": true,
+      "tags": ["Creative", "Advanced Tool"],
+      "starter_prompts": [
+        "Generate a 3D character model from a concept sketch",
+        "Create a low-poly game environment with textures",
+        "Design a 3D product visualization for an e-commerce store",
+        "Build an animated 3D logo with particle effects"
+      ]
+    },
+    {
+      "id": "automation",
+      "task": "Automation & Workflows",
+      "keywords": ["automate", "automation", "workflow", "zapier", "integrate", "bot", "script", "schedule", "trigger", "task", "process", "pipeline", "no-code", "low-code", "efficiency", "productivity"],
+      "recommended_tools": [
+        {"name": "Zapier AI", "url": "https://zapier.com", "rating": 4.7, "icon": "⚡", "description": "Connect apps and automate workflows with AI", "pricing": "Free / $19.99/mo"},
+        {"name": "Make (Integromat)", "url": "https://make.com", "rating": 4.6, "icon": "🔧", "description": "Visual automation platform with AI capabilities", "pricing": "Free / $9/mo"},
+        {"name": "n8n", "url": "https://n8n.io", "rating": 4.5, "icon": "🔗", "description": "Open-source workflow automation with AI nodes", "pricing": "Free (self-hosted) / $20/mo"},
+        {"name": "Microsoft Power Automate", "url": "https://powerautomate.microsoft.com", "rating": 4.4, "icon": "🪟", "description": "Enterprise workflow automation with AI Builder", "pricing": "Free / $15/mo"}
+      ],
+      "difficulty": "Intermediate",
+      "best_free": "n8n",
+      "trending": false,
+      "tags": ["Developer", "Advanced Tool"],
+      "starter_prompts": [
+        "Automate email responses based on customer inquiries",
+        "Create a workflow that posts to social media on schedule",
+        "Build a data pipeline that syncs between CRM and spreadsheet",
+        "Automate file organization and backup with AI classification"
+      ]
+    },
+    {
+      "id": "education",
+      "task": "Education & Learning",
+      "keywords": ["learn", "education", "study", "tutor", "teach", "course", "lesson", "homework", "exam", "quiz", "practice", "skill", "training", "tutorial", "explain", "understand", "concept", "student", "school", "university", "college", "math", "science", "history"],
+      "recommended_tools": [
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.8, "icon": "🤖", "description": "Personal AI tutor for any subject", "pricing": "Free / $20/mo"},
+        {"name": "Khan Academy Khanmigo", "url": "https://khanacademy.org", "rating": 4.7, "icon": "🎓", "description": "AI-powered tutoring with personalized learning", "pricing": "Free / $4/mo"},
+        {"name": "Quizlet AI", "url": "https://quizlet.com", "rating": 4.5, "icon": "📚", "description": "AI flashcards and study tools with spaced repetition", "pricing": "Free / $7.99/mo"},
+        {"name": "Photomath", "url": "https://photomath.com", "rating": 4.6, "icon": "📐", "description": "AI math solver with step-by-step explanations", "pricing": "Free / $9.99/mo"},
+        {"name": "Socratic by Google", "url": "https://socratic.org", "rating": 4.3, "icon": "💡", "description": "Visual learning assistant for homework help", "pricing": "Free"}
+      ],
+      "difficulty": "Beginner",
+      "best_free": "Socratic by Google",
+      "trending": false,
+      "tags": ["Best for Students", "Free Tool"],
+      "starter_prompts": [
+        "Explain calculus derivatives with real-world examples",
+        "Create a study plan for learning Python in 30 days",
+        "Help me understand quantum physics concepts simply",
+        "Generate practice problems for linear algebra",
+        "Teach me about the history of artificial intelligence"
+      ]
+    },
+    {
+      "id": "marketing",
+      "task": "Marketing & SEO",
+      "keywords": ["marketing", "seo", "advertising", "campaign", "social media", "brand", "promote", "growth", "traffic", "keyword", "rank", "google", "ads", "facebook", "instagram", "twitter", "linkedin", "engagement", "conversion", "funnel", "email marketing", "influencer"],
+      "recommended_tools": [
+        {"name": "Jasper AI", "url": "https://jasper.ai", "rating": 4.7, "icon": "✍️", "description": "AI marketing content and campaign generation", "pricing": "$39/mo"},
+        {"name": "Surfer SEO", "url": "https://surferseo.com", "rating": 4.6, "icon": "🏄", "description": "AI-powered SEO content optimization tool", "pricing": "$69/mo"},
+        {"name": "HubSpot AI", "url": "https://hubspot.com", "rating": 4.5, "icon": "🧲", "description": "AI-powered marketing automation and CRM", "pricing": "Free / $45/mo"},
+        {"name": "ChatGPT", "url": "https://chat.openai.com", "rating": 4.5, "icon": "🤖", "description": "Generate marketing copy and strategies", "pricing": "Free / $20/mo"},
+        {"name": "Canva AI", "url": "https://canva.com", "rating": 4.6, "icon": "🎨", "description": "AI design and content creation for marketing", "pricing": "Free / $12.99/mo"}
+      ],
+      "difficulty": "Intermediate",
+      "best_free": "ChatGPT",
+      "trending": false,
+      "tags": ["Advanced Tool"],
+      "starter_prompts": [
+        "Create a 30-day social media content calendar for a tech brand",
+        "Write SEO-optimized blog posts for higher Google ranking",
+        "Design an email marketing funnel for product launch",
+        "Generate 20 engaging Instagram caption ideas with hashtags",
+        "Create a complete digital marketing strategy for a startup"
+      ]
+    }
+  ]
+}

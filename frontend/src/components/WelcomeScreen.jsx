@@ -1,4 +1,4 @@
-export default function WelcomeScreen({ onQuickQuestion }) {
+export default function WelcomeScreen({ onQuickQuestion, onOpenRecommender }) {
   const quickQuestions = [
     {
       icon: '🧠',
@@ -70,6 +70,31 @@ export default function WelcomeScreen({ onQuickQuestion }) {
             ))}
           </div>
         </div>
+
+        {/* Smart Recommender CTA */}
+        {onOpenRecommender && (
+          <button
+            id="welcome-recommender-cta"
+            onClick={onOpenRecommender}
+            className="w-full max-w-lg mx-auto glass-gold rounded-2xl p-4 hover-lift hover:border-gold-500/30 transition-all group pulse-border"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-yellow-600/20 flex items-center justify-center group-hover:from-gold-500/30 group-hover:to-yellow-600/30 transition-all shrink-0">
+                <span className="text-2xl">🧠</span>
+              </div>
+              <div className="text-left flex-1">
+                <h3 className="text-sm font-display font-bold text-white group-hover:text-gold-500 transition-colors">Smart AI Platform Recommender</h3>
+                <p className="text-[11px] text-gray-400">Find the perfect AI tool for your task using ML-powered analysis</p>
+              </div>
+              <div className="flex items-center gap-1 shrink-0">
+                <span className="px-2 py-0.5 rounded-full text-[8px] font-mono font-bold bg-gold-500/20 text-gold-500 animate-pulse">NEW</span>
+                <svg className="w-5 h-5 text-gold-500/30 group-hover:text-gold-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </button>
+        )}
 
         {/* Quick Questions Grid */}
         <div className="space-y-3">

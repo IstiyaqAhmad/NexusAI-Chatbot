@@ -1,16 +1,26 @@
 """
 NexusAI - FastAPI Backend Server
 ================================
-REST API for the Domain-Specific AI Chatbot.
+REST API for the Domain-Specific AI Chatbot + Smart AI Platform Recommender.
 
 Endpoints:
-    POST /chat          - Send a message and get AI response
-    POST /train         - Train/retrain the ML model
-    GET  /stats         - Get model statistics
-    GET  /categories    - Get available FAQ categories
-    GET  /history/{id}  - Get session chat history
-    POST /settings      - Update model parameters
-    DELETE /session/{id} - Clear a session
+    POST /chat              - Send a message and get AI response
+    POST /train             - Train/retrain the ML model
+    GET  /stats             - Get model statistics
+    GET  /categories        - Get available FAQ categories
+    GET  /history/{id}      - Get session chat history
+    POST /settings          - Update model parameters
+    DELETE /session/{id}    - Clear a session
+    
+    # Smart AI Recommender
+    POST /recommend         - Get AI platform recommendations
+    GET  /recommend/trending - Get trending AI tools
+    GET  /recommend/categories - Get all recommendation categories
+    GET  /recommend/free    - Get best free tools
+    GET  /recommend/tools/{id} - Get tools by category
+    POST /recommend/favorite - Add a favorite tool
+    GET  /recommend/user-stats - Get user interaction stats
+    GET  /recommend/engine-stats - Get recommendation engine stats
 """
 
 import os
@@ -25,12 +35,13 @@ import uuid
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from model.nlp_engine import NLPEngine
+from model.recommendation_engine import RecommendationEngine
 
 # === App Configuration ===
 app = FastAPI(
-    title="NexusAI - Domain-Specific AI Chatbot",
-    description="A premium AI chatbot powered by local ML models (TF-IDF + NLP)",
-    version="1.0.0",
+    title="NexusAI - AI Chatbot + Smart Recommender",
+    description="Premium AI chatbot & ML-powered platform recommender (TF-IDF + KNN)",
+    version="2.0.0",
 )
 
 # CORS configuration
@@ -42,13 +53,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# === Initialize NLP Engine ===
-DATA_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "data", "faq_dataset.json"
-)
+# === Initialize Engines ===
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATA_PATH = os.path.join(BASE_DIR, "data", "faq_dataset.json")
+AI_TOOLS_PATH = os.path.join(BASE_DIR, "data", "ai_tools_dataset.json")
 
 engine = NLPEngine(data_path=DATA_PATH)
+recommender = RecommendationEngine(dataset_path=AI_TOOLS_PATH)
 
 
 # === Request/Response Models ===
@@ -79,16 +91,25 @@ class TrainResponse(BaseModel):
     stats: dict
 
 
-# === API Endpoints ===
+class RecommendRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=2000, description="Task description")
+
+
+class FavoriteRequest(BaseModel):
+    tool_name: str = Field(..., min_length=1, description="Tool name to favorite")
+
+
+# === Chatbot API Endpoints ===
 
 @app.get("/")
 async def root():
     """Health check endpoint."""
     return {
         "app": "NexusAI",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "status": "operational",
-        "model_trained": engine.is_trained
+        "model_trained": engine.is_trained,
+        "recommender_trained": recommender.is_trained
     }
 
 
@@ -193,11 +214,74 @@ async def search_category(category: str):
     return {"category": category, "results": results, "count": len(results)}
 
 
+# ============================================================
+# Smart AI Platform Recommender Endpoints
+# ============================================================
+
+@app.post("/recommend")
+async def get_recommendation(request: RecommendRequest):
+    """
+    Get AI platform recommendations based on a task description.
+    Uses TF-IDF + Cosine Similarity + KNN for intelligent matching.
+    """
+    try:
+        result = recommender.recommend(request.query)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Recommendation error: {str(e)}")
+
+
+@app.get("/recommend/trending")
+async def get_trending():
+    """Get trending AI tools across all categories."""
+    return {"trending": recommender.get_trending_tools()}
+
+
+@app.get("/recommend/categories")
+async def get_recommend_categories():
+    """Get all recommendation categories."""
+    return {"categories": recommender.get_all_categories()}
+
+
+@app.get("/recommend/free")
+async def get_free_tools():
+    """Get best free AI tools across categories."""
+    return {"free_tools": recommender.get_free_tools()}
+
+
+@app.get("/recommend/tools/{category_id}")
+async def get_tools_by_category(category_id: str):
+    """Get all tools for a specific category."""
+    result = recommender.get_tools_by_category(category_id)
+    if "error" in result:
+        raise HTTPException(status_code=404, detail=result["error"])
+    return result
+
+
+@app.post("/recommend/favorite")
+async def add_favorite(request: FavoriteRequest):
+    """Add a tool to user favorites."""
+    recommender.add_favorite(request.tool_name)
+    return {"status": "added", "tool": request.tool_name}
+
+
+@app.get("/recommend/user-stats")
+async def get_user_stats():
+    """Get user interaction statistics."""
+    return recommender.get_user_stats()
+
+
+@app.get("/recommend/engine-stats")
+async def get_engine_stats():
+    """Get recommendation engine statistics."""
+    return recommender.get_engine_stats()
+
+
 # === Run Server ===
 if __name__ == "__main__":
     import uvicorn
     print("\n" + "=" * 60)
-    print("  NexusAI - Domain-Specific AI Chatbot Server")
+    print("  NexusAI - AI Chatbot + Smart Platform Recommender")
     print("  Starting on http://localhost:8000")
     print("=" * 60 + "\n")
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)

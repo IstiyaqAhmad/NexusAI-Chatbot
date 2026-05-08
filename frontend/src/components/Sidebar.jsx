@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Sidebar({ modelStats, onRetrain, onClearChat, onToggleSettings, onClose, messageCount }) {
+export default function Sidebar({ modelStats, onRetrain, onClearChat, onToggleSettings, onClose, messageCount, activeView, onViewChange }) {
   const [isRetraining, setIsRetraining] = useState(false)
 
   const handleRetrain = async () => {
@@ -127,6 +127,30 @@ export default function Sidebar({ modelStats, onRetrain, onClearChat, onToggleSe
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Smart Recommender Button */}
+      <div className="px-4 py-2">
+        <button
+          id="open-recommender-btn"
+          onClick={() => onViewChange && onViewChange('recommender')}
+          className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all group ${
+            activeView === 'recommender'
+              ? 'bg-gradient-to-r from-gold-500/20 to-yellow-600/20 border border-gold-500/30 shadow-gold'
+              : 'glass-gold hover:border-gold-500/30'
+          }`}
+        >
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-gold-500/20 to-yellow-600/20 flex items-center justify-center group-hover:from-gold-500/30 group-hover:to-yellow-600/30 transition-all">
+            <span className="text-base">🧠</span>
+          </div>
+          <div className="text-left flex-1">
+            <p className="text-xs font-semibold text-white group-hover:text-gold-500 transition-colors">Smart Recommender</p>
+            <p className="text-[9px] text-gray-500 font-mono">ML-Powered AI Finder</p>
+          </div>
+          <svg className="w-4 h-4 text-gold-500/30 group-hover:text-gold-500/70 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
 
       {/* Action Buttons */}

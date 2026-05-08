@@ -246,3 +246,24 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(255, 215, 0, 0.2);
 }
+
+/* === Neon Glow Effects === */
+.neon-red {
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.2), inset 0 0 10px rgba(239, 68, 68, 0.05);
+}
+
+.neon-gold {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), inset 0 0 10px rgba(255, 215, 0, 0.05);
+}
+
+/* === Animate fade-in (keyframe already defined in tailwind) === */
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

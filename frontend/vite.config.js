@@ -14,6 +14,8 @@ export default defineConfig({
       '/settings': 'http://localhost:8000',
       '/session': 'http://localhost:8000',
       '/search': 'http://localhost:8000',
+      '/recommend': 'http://localhost:8000',
     }
   }
 })
+
